@@ -18,11 +18,7 @@ Here's a short version of it:
     }).execute()
         
 
-To import, check here:
-
-https://jitpack.io/#AndroidDeveloperLB/AsyncTaskEx/
-
-Or use as such:
+To import, use (link: https://jitpack.io/#AndroidDeveloperLB/AsyncTaskEx/ ) :
 
     allprojects {
         repositories {
