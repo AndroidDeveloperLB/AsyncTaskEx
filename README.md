@@ -22,15 +22,15 @@ To import, check here:
 
 https://jitpack.io/#AndroidDeveloperLB/AsyncTaskEx/
 
-Or:
+Or use as such:
 
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
     
-    	dependencies {
-	        implementation 'com.github.AndroidDeveloperLB:AsyncTaskEx:#'
-	}
+    dependencies {
+        implementation 'com.github.AndroidDeveloperLB:AsyncTaskEx:#'
+    }
