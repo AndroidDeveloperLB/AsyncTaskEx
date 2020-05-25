@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.lb.async_task_ex.AsyncTaskEx
 import com.lb.async_task_ex.AsyncTaskThreadPool
-import com.syncme.utils.images.AutoTaskManager
+import com.lb.async_task_ex.AutoTaskManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.list_item.view.*
 

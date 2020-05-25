@@ -1,4 +1,4 @@
-package com.syncme.utils.images
+package com.lb.async_task_ex
 
 import android.view.View
 import androidx.annotation.UiThread
@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
-import com.lb.async_task_ex.AsyncTaskEx
-import com.lb.async_task_ex.AsyncTaskThreadPool
 
 /**used to handle tasks that are associated to views, similar to Glide */
 class AutoTaskManager(activity: AppCompatActivity?, fragment: androidx.fragment.app.Fragment?,
