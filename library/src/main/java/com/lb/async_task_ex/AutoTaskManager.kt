@@ -8,12 +8,13 @@ import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 
 /**used to handle tasks that are associated to views, similar to Glide */
-class AutoTaskManager(activity: AppCompatActivity?, fragment: androidx.fragment.app.Fragment?,
-                      private val threadPool: AsyncTaskThreadPool?, private val cancelUsingInterruption: Boolean = false) {
+class AutoTaskManager(
+    activity: AppCompatActivity?, fragment: androidx.fragment.app.Fragment?,
+    private val threadPool: AsyncTaskThreadPool?, private val cancelUsingInterruption: Boolean = false) {
     private val tasks = HashMap<View, AsyncTaskEx<*>>()
 
     init {
-        fragment?.lifecycle ?: activity?.lifecycle?.addObserver(object : LifecycleObserver {
+        (fragment?.lifecycle ?: activity?.lifecycle)?.addObserver(object : LifecycleObserver {
             @Suppress("unused")
             @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
             fun onDestroy() = cancelAllTasks()

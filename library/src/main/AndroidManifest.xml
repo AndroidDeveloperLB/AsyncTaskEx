@@ -1,5 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lb.async_task_ex">
-
-    /
-</manifest>
+<manifest package="com.lb.async_task_ex" />
